@@ -41,7 +41,7 @@ body {
   background: #6dbd2a;
   border-radius: 50%;
 }
-button {
+a {
   align-self: flex-end;
   background: #7ac142;
   color: #fff;
@@ -50,7 +50,11 @@ button {
   border-radius: 30px;
   cursor: pointer;
   transition:  0.3s;
+  text-decoration: none;
 }
-button:hover {
+a:hover {
   background: #5ba71e;
+}
+.star{
+  color: gold;
 }
