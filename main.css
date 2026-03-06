@@ -5,43 +5,49 @@ body {
 }
 .Karty {
   display: grid;
+  grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 50px;
+  gap: 2rem;
+  padding: 3rem;
 }
 .Karty > div {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row:span 5;
   background: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  gap: 0.6rem;
+  position: relative;
+  
 }
 .CenaSklad {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
 }
 .sklad {
   color: #6dbd2a;
-  font-size: 14px;
+  font-size: 0.9rem;
   position: relative;
-  padding-left: 12px;
+  padding-left: 0.75rem;
 }
 .sklad::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
+  top: 30%;
+  align-items: center;
+  width: 0.5rem;
+  height: 0.5rem;
   background: #6dbd2a;
   border-radius: 50%;
 }
 a {
+  display: flex;
   align-self: flex-end;
   background: #7ac142;
   color: #fff;
@@ -51,10 +57,18 @@ a {
   cursor: pointer;
   transition:  0.3s;
   text-decoration: none;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
 }
 a:hover {
   background: #5ba71e;
 }
 .star{
   color: gold;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
